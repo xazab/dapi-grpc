@@ -1,4 +1,4 @@
-package org.dash.platform.dapi.v0;
+package org.xazab.platform.dapi.v0;
 
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
 import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
@@ -24,80 +24,80 @@ public final class PlatformGrpc {
 
   private PlatformGrpc() {}
 
-  public static final String SERVICE_NAME = "org.dash.platform.dapi.v0.Platform";
+  public static final String SERVICE_NAME = "org.xazab.platform.dapi.v0.Platform";
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest,
-      org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse> METHOD_BROADCAST_STATE_TRANSITION =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest, org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest,
+      org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse> METHOD_BROADCAST_STATE_TRANSITION =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest, org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Platform", "broadcastStateTransition"))
+              "org.xazab.platform.dapi.v0.Platform", "broadcastStateTransition"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest,
-      org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse> METHOD_GET_IDENTITY =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest, org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest,
+      org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse> METHOD_GET_IDENTITY =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest, org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Platform", "getIdentity"))
+              "org.xazab.platform.dapi.v0.Platform", "getIdentity"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest,
-      org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse> METHOD_GET_DATA_CONTRACT =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest, org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest,
+      org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse> METHOD_GET_DATA_CONTRACT =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest, org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Platform", "getDataContract"))
+              "org.xazab.platform.dapi.v0.Platform", "getDataContract"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest,
-      org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse> METHOD_GET_DOCUMENTS =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest, org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest,
+      org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse> METHOD_GET_DOCUMENTS =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest, org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Platform", "getDocuments"))
+              "org.xazab.platform.dapi.v0.Platform", "getDocuments"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest,
-      org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse> METHOD_GET_IDENTITIES_BY_PUBLIC_KEY_HASHES =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest, org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest,
+      org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse> METHOD_GET_IDENTITIES_BY_PUBLIC_KEY_HASHES =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest, org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Platform", "getIdentitiesByPublicKeyHashes"))
+              "org.xazab.platform.dapi.v0.Platform", "getIdentitiesByPublicKeyHashes"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest,
-      org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse> METHOD_GET_IDENTITY_IDS_BY_PUBLIC_KEY_HASHES =
-      io.grpc.MethodDescriptor.<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest, org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse>newBuilder()
+  public static final io.grpc.MethodDescriptor<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest,
+      org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse> METHOD_GET_IDENTITY_IDS_BY_PUBLIC_KEY_HASHES =
+      io.grpc.MethodDescriptor.<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest, org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "org.dash.platform.dapi.v0.Platform", "getIdentityIdsByPublicKeyHashes"))
+              "org.xazab.platform.dapi.v0.Platform", "getIdentityIdsByPublicKeyHashes"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse.getDefaultInstance()))
+              org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse.getDefaultInstance()))
           .build();
 
   /**
@@ -129,43 +129,43 @@ public final class PlatformGrpc {
 
     /**
      */
-    public void broadcastStateTransition(org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse> responseObserver) {
+    public void broadcastStateTransition(org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_BROADCAST_STATE_TRANSITION, responseObserver);
     }
 
     /**
      */
-    public void getIdentity(org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse> responseObserver) {
+    public void getIdentity(org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_IDENTITY, responseObserver);
     }
 
     /**
      */
-    public void getDataContract(org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse> responseObserver) {
+    public void getDataContract(org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_DATA_CONTRACT, responseObserver);
     }
 
     /**
      */
-    public void getDocuments(org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse> responseObserver) {
+    public void getDocuments(org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_DOCUMENTS, responseObserver);
     }
 
     /**
      */
-    public void getIdentitiesByPublicKeyHashes(org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse> responseObserver) {
+    public void getIdentitiesByPublicKeyHashes(org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_IDENTITIES_BY_PUBLIC_KEY_HASHES, responseObserver);
     }
 
     /**
      */
-    public void getIdentityIdsByPublicKeyHashes(org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse> responseObserver) {
+    public void getIdentityIdsByPublicKeyHashes(org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_IDENTITY_IDS_BY_PUBLIC_KEY_HASHES, responseObserver);
     }
 
@@ -175,43 +175,43 @@ public final class PlatformGrpc {
             METHOD_BROADCAST_STATE_TRANSITION,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest,
-                org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse>(
+                org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest,
+                org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse>(
                   this, METHODID_BROADCAST_STATE_TRANSITION)))
           .addMethod(
             METHOD_GET_IDENTITY,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest,
-                org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse>(
+                org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest,
+                org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse>(
                   this, METHODID_GET_IDENTITY)))
           .addMethod(
             METHOD_GET_DATA_CONTRACT,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest,
-                org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse>(
+                org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest,
+                org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse>(
                   this, METHODID_GET_DATA_CONTRACT)))
           .addMethod(
             METHOD_GET_DOCUMENTS,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest,
-                org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse>(
+                org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest,
+                org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse>(
                   this, METHODID_GET_DOCUMENTS)))
           .addMethod(
             METHOD_GET_IDENTITIES_BY_PUBLIC_KEY_HASHES,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest,
-                org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse>(
+                org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest,
+                org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse>(
                   this, METHODID_GET_IDENTITIES_BY_PUBLIC_KEY_HASHES)))
           .addMethod(
             METHOD_GET_IDENTITY_IDS_BY_PUBLIC_KEY_HASHES,
             asyncUnaryCall(
               new MethodHandlers<
-                org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest,
-                org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse>(
+                org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest,
+                org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse>(
                   this, METHODID_GET_IDENTITY_IDS_BY_PUBLIC_KEY_HASHES)))
           .build();
     }
@@ -237,48 +237,48 @@ public final class PlatformGrpc {
 
     /**
      */
-    public void broadcastStateTransition(org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse> responseObserver) {
+    public void broadcastStateTransition(org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_BROADCAST_STATE_TRANSITION, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getIdentity(org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse> responseObserver) {
+    public void getIdentity(org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_IDENTITY, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getDataContract(org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse> responseObserver) {
+    public void getDataContract(org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_DATA_CONTRACT, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getDocuments(org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse> responseObserver) {
+    public void getDocuments(org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_DOCUMENTS, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getIdentitiesByPublicKeyHashes(org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse> responseObserver) {
+    public void getIdentitiesByPublicKeyHashes(org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_IDENTITIES_BY_PUBLIC_KEY_HASHES, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getIdentityIdsByPublicKeyHashes(org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest request,
-        io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse> responseObserver) {
+    public void getIdentityIdsByPublicKeyHashes(org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest request,
+        io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_IDENTITY_IDS_BY_PUBLIC_KEY_HASHES, getCallOptions()), request, responseObserver);
     }
@@ -304,42 +304,42 @@ public final class PlatformGrpc {
 
     /**
      */
-    public org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse broadcastStateTransition(org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest request) {
+    public org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse broadcastStateTransition(org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_BROADCAST_STATE_TRANSITION, getCallOptions(), request);
     }
 
     /**
      */
-    public org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse getIdentity(org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest request) {
+    public org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse getIdentity(org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_IDENTITY, getCallOptions(), request);
     }
 
     /**
      */
-    public org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse getDataContract(org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest request) {
+    public org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse getDataContract(org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_DATA_CONTRACT, getCallOptions(), request);
     }
 
     /**
      */
-    public org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse getDocuments(org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest request) {
+    public org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse getDocuments(org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_DOCUMENTS, getCallOptions(), request);
     }
 
     /**
      */
-    public org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse getIdentitiesByPublicKeyHashes(org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest request) {
+    public org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse getIdentitiesByPublicKeyHashes(org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_IDENTITIES_BY_PUBLIC_KEY_HASHES, getCallOptions(), request);
     }
 
     /**
      */
-    public org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse getIdentityIdsByPublicKeyHashes(org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest request) {
+    public org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse getIdentityIdsByPublicKeyHashes(org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_IDENTITY_IDS_BY_PUBLIC_KEY_HASHES, getCallOptions(), request);
     }
@@ -365,48 +365,48 @@ public final class PlatformGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse> broadcastStateTransition(
-        org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse> broadcastStateTransition(
+        org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_BROADCAST_STATE_TRANSITION, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse> getIdentity(
-        org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse> getIdentity(
+        org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_IDENTITY, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse> getDataContract(
-        org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse> getDataContract(
+        org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_DATA_CONTRACT, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse> getDocuments(
-        org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse> getDocuments(
+        org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_DOCUMENTS, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse> getIdentitiesByPublicKeyHashes(
-        org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse> getIdentitiesByPublicKeyHashes(
+        org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_IDENTITIES_BY_PUBLIC_KEY_HASHES, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse> getIdentityIdsByPublicKeyHashes(
-        org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse> getIdentityIdsByPublicKeyHashes(
+        org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_IDENTITY_IDS_BY_PUBLIC_KEY_HASHES, getCallOptions()), request);
     }
@@ -437,28 +437,28 @@ public final class PlatformGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_BROADCAST_STATE_TRANSITION:
-          serviceImpl.broadcastStateTransition((org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse>) responseObserver);
+          serviceImpl.broadcastStateTransition((org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.BroadcastStateTransitionResponse>) responseObserver);
           break;
         case METHODID_GET_IDENTITY:
-          serviceImpl.getIdentity((org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse>) responseObserver);
+          serviceImpl.getIdentity((org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityResponse>) responseObserver);
           break;
         case METHODID_GET_DATA_CONTRACT:
-          serviceImpl.getDataContract((org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse>) responseObserver);
+          serviceImpl.getDataContract((org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDataContractResponse>) responseObserver);
           break;
         case METHODID_GET_DOCUMENTS:
-          serviceImpl.getDocuments((org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse>) responseObserver);
+          serviceImpl.getDocuments((org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetDocumentsResponse>) responseObserver);
           break;
         case METHODID_GET_IDENTITIES_BY_PUBLIC_KEY_HASHES:
-          serviceImpl.getIdentitiesByPublicKeyHashes((org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse>) responseObserver);
+          serviceImpl.getIdentitiesByPublicKeyHashes((org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentitiesByPublicKeyHashesResponse>) responseObserver);
           break;
         case METHODID_GET_IDENTITY_IDS_BY_PUBLIC_KEY_HASHES:
-          serviceImpl.getIdentityIdsByPublicKeyHashes((org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest) request,
-              (io.grpc.stub.StreamObserver<org.dash.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse>) responseObserver);
+          serviceImpl.getIdentityIdsByPublicKeyHashes((org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesRequest) request,
+              (io.grpc.stub.StreamObserver<org.xazab.platform.dapi.v0.PlatformOuterClass.GetIdentityIdsByPublicKeyHashesResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -479,7 +479,7 @@ public final class PlatformGrpc {
   private static final class PlatformDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return org.dash.platform.dapi.v0.PlatformOuterClass.getDescriptor();
+      return org.xazab.platform.dapi.v0.PlatformOuterClass.getDescriptor();
     }
   }
 

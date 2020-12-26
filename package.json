@@ -1,5 +1,5 @@
 {
-  "name": "@dashevo/dapi-grpc",
+  "name": "@xazab/dapi-grpc",
   "version": "0.16.0",
   "description": "DAPI GRPC definition file and generated clients",
   "browser": "browser.js",
@@ -28,15 +28,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dashevo/dapi-grpc.git"
+    "url": "git+https://github.com/xazab/dapi-grpc.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dashevo/dapi-grpc/issues"
+    "url": "https://github.com/xazab/dapi-grpc/issues"
   },
-  "homepage": "https://github.com/dashevo/dapi-grpc#readme",
+  "homepage": "https://github.com/xazab/dapi-grpc#readme",
   "dependencies": {
-    "@dashevo/grpc-common": "^0.3.0",
+    "@xazab/grpc-common": "^0.3.0",
     "google-protobuf": "^3.12.2",
     "grpc": "^1.24.3",
     "grpc-web": "^1.2.0",

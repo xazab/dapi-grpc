@@ -15,11 +15,11 @@ const {
       protobufToJsonFactory,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@xazab/grpc-common');
 
 const {
   org: {
-    dash: {
+    xazab: {
       platform: {
         dapi: {
           v0: {
