@@ -1,6 +1,6 @@
 # DAPI GRPC
 
-[![Build Status](https://travis-ci.com/xazab/dapi-grpc.svg?branch=master)](https://travis-ci.com/xazab/dapi-grpc)
+[![Build Status](https://travis-ci.com/xazab/dapi-grpc.svg?branch=v0.17-dev)](https://travis-ci.com/xazab/dapi-grpc)
 [![NPM version](https://img.shields.io/npm/v/@xazab/dapi-grpc.svg)](https://npmjs.org/package/@xazab/dapi-grpc)
 
 > Decentralized API GRPC definition files and generated clients
